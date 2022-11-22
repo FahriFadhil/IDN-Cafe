@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDN Gourmet</title>
+    <link rel="icon" href="./img/makanan-1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/2400x1600?restaurant');
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .bg-img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: brightness(.9);
+        }
+
+        .hero-img {
+            filter: brightness(.9);
+        }
+
+        .bg-blur_black {
+            background-color: rgba(0, 0, 0, .5);
+            backdrop-filter: blur(1rem);
+        }
+
+        .bg-blur_gray {
+            background-color: rgba(0, 0, 0, .25);
+            backdrop-filter: blur(.5rem);
+        }
+
+        .hero-content {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .specialty .container .row {
+            min-height: 50vh;
+        }
+
+        .menu {
+            background-color: rgba(0, 0, 0, .25);
+        }
+
+        .menu .bg-layer {
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .menu .container {
+            min-height: 50vh;
+        }
+
+        .menu .container ul {
+            width: 100%;
+        }
+
+        .panorama {}
+
+        .panorama .container,
+        .panorama .row {
+            height: 100%;
+            width: 100%;
+        }
+
+        .panorama #carouselExampleCaptions {
+            min-height: 400px;
+        }
+
+        @media (max-width: 767px) {
+            .hero-img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg p-4 navbar-dark fixed-top bg-blur_black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">IDN <span class="text-info">Gourmet</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Booking</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero bg-img">
+        <div class="hero-content d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h1 data-aos="fade-left">IDN <span class="text-info">Cafe & Restaurant</span></h1>
+                        <p data-aos="fade-left" data-aos-delay="200" class="fs-4 mt-4">Original Taste from Nusantara</p>
+                        <p data-aos="fade-left" data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Dolores tenetur deleniti dolore enim similique facere vel? Pariatur accusamus cum,
+                            nesciunt architecto nobis at illo inventore, sint, laboriosam dicta laudantium libero!</p>
+                        <a data-aos="fade-left" data-aos-delay="650" href="#"
+                            class="btn btn-info rounded px-4 py-3 mt-4">EXPLORE NOW</a>
+                    </div>
+                    <div class="col-md-6 justify-content-end d-flex">
+                        <img data-aos="fade-left" data-aos-delay="800" src="./img/makanan-1.png"
+                            class="img-fluid hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="specialty">
+        <div class="container my-5">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-5">
+                    <img src="./img/uwuh.png" alt="Wedang Uwuh" class="img-fluid">
+                </div>
+                <div class="col-md-7 my-4 d-flex flex-column align-items-center">
+                    <h2>Wedang Uwuh <span class="mx-2">-</span> Our Specialty</h2>
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque consectetur, architecto
+                        sit adipisci dicta dignissimos repellat praesentium in laudantium eum suscipit aperiam possimus
+                        vitae quisquam, laborum odit perferendis consequuntur?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque consectetur, architecto
+                        sit adipisci dicta dignissimos repellat praesentium in laudantium eum suscipit aperiam possimus
+                        vitae quisquam, laborum odit perferendis consequuntur?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu bg-img">
+        <div class="bg-layer">
+            <div class="container py-4 d-flex flex-column align-items-center text-white">
+                <h1 class="py-4">IDN <span class="text-info">Original Menu List</span></h1>
+                <ul class="nav nav-tabs pt-2 d-flex justify-content-center gap-4" id="myTab" role="tablist">
+                    <li class="nav-item navbar-dark" role="presentation">
+                        <button class="nav-link text-info px-4 py-2 active" id="appetizer-tab" data-bs-toggle="tab"
+                            data-bs-target="#appetizer-tab-pane" type="button" role="tab"
+                            aria-controls="appetizer-tab-pane" aria-selected="true">Appetizer</button>
+                    </li>
+                    <li class="nav-item navbar-dark" role="presentation">
+                        <button class="nav-link text-info px-4 py-2" id="main_course-tab" data-bs-toggle="tab"
+                            data-bs-target="#main_course-tab-pane" type="button" role="tab"
+                            aria-controls="main_course-tab-pane" aria-selected="false">Main Course</button>
+                    </li>
+                    <li class="nav-item navbar-dark" role="presentation">
+                        <button class="nav-link text-info px-4 py-2" id="dessert-tab" data-bs-toggle="tab"
+                            data-bs-target="#dessert-tab-pane" type="button" role="tab" aria-controls="dessert-tab-pane"
+                            aria-selected="false">Dessert</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content pb-2 container-fluid text-white" id="myTabContent">
+                    <div class="tab-pane fade p-4 show active" id="appetizer-tab-pane" role="tabpanel"
+                        aria-labelledby="appetizer-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Appetizer</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Appetizer</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Appetizer</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade p-4" id="main_course-tab-pane" role="tabpanel"
+                        aria-labelledby="main_course-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Main Course</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Main Course</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Main Course</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade p-4" id="dessert-tab-pane" role="tabpanel" aria-labelledby="dessert-tab"
+                        tabindex="0">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dessert</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dessert</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card bg-blur_gray">
+                                    <img src="./img/makanan-1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dessert</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="panorama">
+        <div class="container py-4">
+            <div class="row d-flex align-items-center py-4 justify-content-center gap-4">
+                <div class="col-md-8 py-4">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://source.unsplash.com/1200x800?restaurant view" class="d-block w-100"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block bg-blur_black">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://source.unsplash.com/1201x800?restaurant view" class="d-block w-100"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block bg-blur_black">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://source.unsplash.com/1202x800?restaurant view" class="d-block w-100"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block bg-blur_black">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-3 px-4">
+                    <h1 class=" py-2">IDN <span class="text-info">Panorama</span></h1>
+                    <h4 class="mb-4">Find out the beautiness of our Restaurant View.</h4>
+                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus odit eum,
+                        dolores perspiciatis expedita vero! Autem, possimus. Exercitationem laboriosam asperiores
+                        reprehenderit obcaecati eum sed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking mb-4">
+        <div class="container">
+            <h1 class="py-4 text-center">Book <span class="text-info">Table</span></h1>
+            <div class="card p-4">
+                <form action="" class="d-flex flex-column gap-2">
+                    <div class="rom-md gap-4">
+                        <div class="row g-2">
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputGrid"
+                                        placeholder="name@example.com" value="">
+                                    <label for="floatingInputGrid">Email address</label>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectGrid">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One Person</option>
+                                        <option value="2">Two Person</option>
+                                        <option value="3">Three Person</option>
+                                        <option value="4">Four Person</option>
+                                        <option value="5">Five Person</option>
+                                        <option value="6">Six Person</option>
+                                        <option value="Party">Party Size</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">Table For</label>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectGrid">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">Works with selects</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rom-md gap-4">
+                        <div class="row g-2">
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputGrid"
+                                        placeholder="name@example.com" value="">
+                                    <label for="floatingInputGrid">Customer Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectGrid">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">Works with selects</label>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="form-floating">
+                                    <select class="form-select" id="floatingSelectGrid">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <label for="floatingSelectGrid">Works with selects</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-info py-2 mt-2">Book</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center text-white mt-4">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">idngourmet.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
